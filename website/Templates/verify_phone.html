@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <h3>Verify Your Phone</h3>
+  <p>We sent a verification code to {{ user.number }}.</p>
+  <form method="post">
+    <input type="text" name="code" placeholder="Enter verification code" required>
+    <button type="submit">Verify</button>
+  </form>
+{% endblock %}
