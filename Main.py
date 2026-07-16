@@ -7,7 +7,7 @@ load_dotenv()
 
 with app.app_context():
     db.create_all()
-    print("Database created abd tables initialized.")
+    print("Database created and tables initialized.")
 
 if __name__ == '__main__':
     app.run(debug=False)
